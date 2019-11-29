@@ -1,0 +1,27 @@
+{
+  "name": "Crowdcube Investment Alerter",
+  "description": "A script to monitor an investment page on Crowdcube.com, logging and alerting the investment pledged.",
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "advanced-scheduler:hobby-dev"
+  ],
+  "env": {
+    "CC_URL": {
+      "description": "The full https URL of your Crowdcube page",
+      "value": "https://www.crowdcube.com/companies/1854-media-ltd-1/pitches/qrRvkq"
+    },
+    "POSTMARK_KEY": {
+      "description": "A valid PostmarkApp API key, or blank for no emails",
+      "value": ""
+    },
+    "SENDER_EMAIL": {
+      "description": "The sender email address - must be valid for your postmark setup",
+      "value": ""
+    },
+    "RECIP_EMAIL": {
+      "description": "The recipient email address",
+      "value": ""
+    }
+  },
+  "repository": "https://github.com/tomroyal/crowdcubealerter",
+}
