@@ -3,7 +3,7 @@
   "description": "A script to monitor an investment page on Crowdcube.com, logging and alerting the investment pledged.",
   "addons": [
     "heroku-postgresql:hobby-dev",
-    "advanced-scheduler:hobby-dev"
+    "advanced-scheduler:hobby"
   ],
   "env": {
     "CC_URL": {
